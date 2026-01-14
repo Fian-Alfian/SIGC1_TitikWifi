@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peta Persebaran Titik WiFi</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 py-28 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-down">
+                Peta Persebaran Titik WiFi
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up">
+                Peta ini menyajikan informasi spasial mengenai sebaran infrastruktur teknologi informasi di tingkat
+                lokal.
+                Berjudul Peta Sebaran Titik Akses WiFi Publik Kelurahan Purwantoro, dokumen ini berfungsi sebagai
+                panduan visual bagi masyarakat untuk menemukan lokasi akses internet gratis yang disediakan oleh
+                pemerintah Kota Malang di wilayah Kecamatan Blimbing pada tahun 2026.
+            </p>
+            <a href="qgis2web\peta.html"
+                class="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-xl shadow-lg hover:scale-105 transition"
+                data-aos="zoom-in">
+                Lihat Peta Interaktif
+            </a>
+        </div>
+
+        <!-- Decorative blur -->
+        <div class="absolute -top-20 -right-20 w-72 h-72 bg-white opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 w-72 h-72 bg-white opacity-10 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Identitas Akademik -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <div class="bg-white rounded-xl shadow p-8 text-center" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4">Informasi Akademik</h2>
+            <p class="text-gray-600">
+                <strong>Universitas:</strong> Institut Teknologi dan Bisnis Asia Malang<br>
+                <strong>Program Studi:</strong> Teknik Informatika<br>
+                <strong>Mata Kuliah:</strong> Sistem Informasi Geografis (SIG)
+            </p>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-6 text-center" data-aos="fade-up">
+            Tentang Peta
+        </h2>
+        <p class="text-center max-w-3xl mx-auto text-gray-600" data-aos="fade-up" data-aos-delay="100">
+            Peta ini menampilkan persebaran titik WiFi dalam bentuk peta interaktif
+            berbasis web. Data divisualisasikan secara spasial untuk memudahkan
+            pemahaman distribusi jaringan WiFi pada suatu wilayah.
+        </p>
+    </section>
+
+    <!-- Fitur -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-10 text-center" data-aos="fade-up">
+                Fitur Utama WebGIS
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up">
+                    <h3 class="font-semibold text-xl mb-3">Titik WiFi Publik</h3>
+                    <p class="text-gray-600">
+                        Menampilkan lokasi titik WiFi publik yang tersebar di wilayah
+                        Kelurahan Purwantoro dalam bentuk marker pada peta.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <h3 class="font-semibold text-xl mb-3">Batas Administrasi</h3>
+                    <p class="text-gray-600">
+                        Menyajikan batas wilayah kelurahan dan pemukiman untuk membantu
+                        analisis spasial persebaran WiFi.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <h3 class="font-semibold text-xl mb-3">Jaringan Jalan</h3>
+                    <p class="text-gray-600">
+                        Menampilkan jaringan jalan seperti jalan arteri, jalan lokal,
+                        dan jalan gang sebagai informasi pendukung aksesibilitas.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up">
+                    <h3 class="font-semibold text-xl mb-3">Kontrol Layer Peta</h3>
+                    <p class="text-gray-600">
+                        Pengguna dapat mengaktifkan atau menonaktifkan layer peta
+                        sesuai kebutuhan melalui panel kontrol layer.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <h3 class="font-semibold text-xl mb-3">Basemap OpenStreetMap</h3>
+                    <p class="text-gray-600">
+                        Menggunakan OpenStreetMap sebagai peta dasar untuk menampilkan
+                        kondisi wilayah secara detail.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <h3 class="font-semibold text-xl mb-3">Popup Informasi</h3>
+                    <p class="text-gray-600">
+                        Setiap objek pada peta dapat diklik untuk menampilkan informasi
+                        atribut secara interaktif.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Manfaat -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-6 text-center" data-aos="fade-up">
+            Manfaat
+        </h2>
+        <p class="max-w-3xl mx-auto text-center text-gray-600" data-aos="fade-up" data-aos-delay="100">
+            Peta ini bermanfaat sebagai media pembelajaran Sistem Informasi Geografis,
+            pendukung analisis spasial, serta sarana penyajian data persebaran jaringan WiFi
+            secara visual dan informatif.
+        </p>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-20 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="zoom-in">
+                Jelajahi Peta Persebaran WiFi
+            </h2>
+            <a href="qgis2web\peta.html"
+                class="inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-xl shadow-lg hover:scale-105 transition"
+                data-aos="zoom-in" data-aos-delay="150">
+                Buka Peta Interaktif
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 text-center py-5">
+        © 2026 | Sistem Informasi Geografis(SIG)
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>
