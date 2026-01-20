@@ -60,7 +60,7 @@
         .leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
             border: 0px;
         }
-        }
+        
         .fa, .leaflet-container, a {
             color: #444444 !important;
         }
@@ -68,7 +68,7 @@
         .leaflet-control-locate a,
         .leaflet-touch .leaflet-control-geocoder-icon,
         .leaflet-control-search .search-button,
-         .leaflet-control-measure {
+        .leaflet-control-measure {
             background-color: #f8f8f8 !important;
             border-radius: 0px !important;
             color: #444444 !important;
@@ -85,7 +85,7 @@
         }
         .abstractUncollapsed {
             padding: 6px 8px;
-            font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+            font: 15px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
             background-color:#f8f8f8 !important;
             color: #444444 !important;
             box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -193,7 +193,4 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
-            display: none;
         }
